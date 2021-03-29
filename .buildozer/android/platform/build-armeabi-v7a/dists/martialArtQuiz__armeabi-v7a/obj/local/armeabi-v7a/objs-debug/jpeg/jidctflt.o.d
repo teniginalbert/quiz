@@ -1,0 +1,23 @@
+/home/alberttenigin/test/.buildozer/android/platform/build-armeabi-v7a/build/bootstrap_builds/sdl2/obj/local/armeabi-v7a/objs-debug/jpeg/jidctflt.o: \
+  /home/alberttenigin/test/.buildozer/android/platform/build-armeabi-v7a/build/bootstrap_builds/sdl2/jni/SDL2_image/external/jpeg-9b/jidctflt.c \
+  /home/alberttenigin/test/.buildozer/android/platform/build-armeabi-v7a/build/bootstrap_builds/sdl2/jni/SDL2_image/external/jpeg-9b/jinclude.h \
+  /home/alberttenigin/test/.buildozer/android/platform/build-armeabi-v7a/build/bootstrap_builds/sdl2/jni/SDL2_image/external/jpeg-9b/jconfig.h \
+  /home/alberttenigin/test/.buildozer/android/platform/build-armeabi-v7a/build/bootstrap_builds/sdl2/jni/SDL2_image/external/jpeg-9b/jpeglib.h \
+  /home/alberttenigin/test/.buildozer/android/platform/build-armeabi-v7a/build/bootstrap_builds/sdl2/jni/SDL2_image/external/jpeg-9b/jmorecfg.h \
+  /home/alberttenigin/test/.buildozer/android/platform/build-armeabi-v7a/build/bootstrap_builds/sdl2/jni/SDL2_image/external/jpeg-9b/jpegint.h \
+  /home/alberttenigin/test/.buildozer/android/platform/build-armeabi-v7a/build/bootstrap_builds/sdl2/jni/SDL2_image/external/jpeg-9b/jerror.h \
+  /home/alberttenigin/test/.buildozer/android/platform/build-armeabi-v7a/build/bootstrap_builds/sdl2/jni/SDL2_image/external/jpeg-9b/jdct.h
+
+/home/alberttenigin/test/.buildozer/android/platform/build-armeabi-v7a/build/bootstrap_builds/sdl2/jni/SDL2_image/external/jpeg-9b/jinclude.h:
+
+/home/alberttenigin/test/.buildozer/android/platform/build-armeabi-v7a/build/bootstrap_builds/sdl2/jni/SDL2_image/external/jpeg-9b/jconfig.h:
+
+/home/alberttenigin/test/.buildozer/android/platform/build-armeabi-v7a/build/bootstrap_builds/sdl2/jni/SDL2_image/external/jpeg-9b/jpeglib.h:
+
+/home/alberttenigin/test/.buildozer/android/platform/build-armeabi-v7a/build/bootstrap_builds/sdl2/jni/SDL2_image/external/jpeg-9b/jmorecfg.h:
+
+/home/alberttenigin/test/.buildozer/android/platform/build-armeabi-v7a/build/bootstrap_builds/sdl2/jni/SDL2_image/external/jpeg-9b/jpegint.h:
+
+/home/alberttenigin/test/.buildozer/android/platform/build-armeabi-v7a/build/bootstrap_builds/sdl2/jni/SDL2_image/external/jpeg-9b/jerror.h:
+
+/home/alberttenigin/test/.buildozer/android/platform/build-armeabi-v7a/build/bootstrap_builds/sdl2/jni/SDL2_image/external/jpeg-9b/jdct.h:

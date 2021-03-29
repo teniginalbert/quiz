@@ -1,0 +1,443 @@
+<EraScreen>:
+	on_enter:
+		self.animation_logo()
+
+	FloatLayout:  
+        orientation: 'vertical'
+        canvas:
+            Rectangle:
+                source: 'image/background.png'
+                size: self.size
+
+	FloatLayout:    
+	    BoxLayout:
+			padding: 30
+			orientation: "vertical"
+			BoxLayout:
+				FloatLayout:
+					Image:
+						id: E
+						source: "image/era_logo/e.png"
+						pos_hint: {"x":-4, "y":-0.4}
+				BoxLayout:
+		    		orientation: 'vertical'
+		    		FloatLayout:
+			    		Image:
+			    			id: R
+			    			source: "image/era_logo/r.png"
+			    			pos_hint: {"x":0, "y":-0.3+1.2}
+
+			    		Image:
+							id: I_L
+							source: "image/tend/stand_right.png"
+							color: 0,0,0,0
+			    			pos_hint: {"x":-2.2, "y":-0.73}
+						Image:
+							id: I_R
+							source: "image/tend/stand_left.png"
+							color: 1,1,1,1
+			    			pos_hint: {"x":-2.2, "y":-0.73}
+						Image:
+							id: I_R1
+							source: "image/tend/run_left_1.png"
+							color: 0,0,0,0
+			    			pos_hint: {"x":-2.2, "y":-0.73}
+						Image:
+							id: I_R2
+							source: "image/tend/run_left_2.png"
+							color: 0,0,0,0
+			    			pos_hint: {"x":-2.2, "y":-0.73}
+						Image:
+							id: I_L1
+							source: "image/tend/run_right_1.png"
+							color: 0,0,0,0
+			    			pos_hint: {"x":-2.2, "y":-0.73}
+						Image:
+							id: I_L2
+							source: "image/tend/run_right_2.png"
+							color: 0,0,0,0
+			    			pos_hint: {"x":-2.2, "y":-0.73}
+			    		Image:
+			    			id: I_F
+							source: "image/tend/front.png"
+							color: 0,0,0,0
+			    			pos_hint: {"x":-2.2, "y":-0.73}
+			    		Image:
+			    			id: I_F_1
+							source: "image/tend/front_20grad.png"
+							color: 0,0,0,0
+			    			pos_hint: {"x":-2.2, "y":-0.73}
+			    		Image:
+			    			id: I_F_UP
+							source: "image/tend/front_160grad.png"
+							color: 0,0,0,0
+			    			pos_hint: {"x":-2.2, "y":-0.73}
+
+
+			    FloatLayout:
+			    	Image:
+			    		id: A
+			    		source: "image/era_logo/a.png"
+			    		pos_hint: {"x":4, "y":-0.4}
+
+		    FloatLayout:
+			    Button:
+			    	id: GP
+			    	size_hint: 1, .3
+			    	background_color: [0,0,0,0]
+			    	background_normal: "image/era_logo/gaming_products.png"
+			    	background_down: "image/era_logo/gaming_products.png"
+			    	pos_hint: {"x":0.003, "y":0.35}
+		    
+
+<MenuScreen>:
+	on_enter:
+		self.animation_logo()
+		self.keysis = 1	
+	
+
+	FloatLayout:  
+        orientation: 'vertical'
+        canvas:
+            Rectangle:
+                source: 'image/background.png'
+                size: self.size
+	BoxLayout:
+		spacing: 10
+		orientation: 'vertical'
+		padding: 30
+		FloatLayout:
+			BoxLayout:
+				id: bl_menu1
+				spacing: 5
+				pos_hint: {"x": 0, "top": 5}
+				orientation: 'vertical'
+				Button:
+					id: btn_play
+					background_normal: "image/button_play.png"
+					background_down: 'image/on_button_play.png'
+					on_release:
+						root.manager.current='play'
+				BoxLayout:
+					size_hint: 1, .7
+					spacing: 5
+					Button:
+						background_normal: "image/button_option.png"
+						background_down:"image/on_button_option.png"	
+						on_release:
+							root.manager.current='option'
+					Button:
+						background_normal: "image/button_rools.png"	
+						background_down:"image/on_button_rools.png"	
+						on_release:
+							root.manager.current='rools'
+					Button:
+						background_normal: "image/button_about_as.png"
+						background_down:"image/button_about_as.png"
+						on_release:
+							root.manager.current='about'
+
+		FloatLayout:
+			size_hint: 1, .8
+			Image:
+				id: im_menu1
+				source:"image/factoria.png"
+				pos_hint: {"x":0-4, "top":1}
+			Image:
+				id: im_menu1_1
+				source:"image/factoria.png"
+				pos_hint: {"x":0.2-4, "top":0.2}
+
+			Image:
+				id: im_menu1_2
+				source:"image/factoria.png"
+				pos_hint: {"x":0.5-4, "top":-0.6}
+
+			Image:
+				id: im_menu1_3
+				source:"image/factoria.png"
+				pos_hint: {"x":0.8-4, "top":-1.4}
+
+
+			Image:
+				id: im_menu1_4
+				source:"image/factoria.png"
+				pos_hint: {"x":1.4-4, "top":-2.2}
+
+			Image:
+				id: im_menu1_5
+				source:"image/factoria.png"
+				pos_hint: {"x":1.7-4, "top":1.8}
+
+			Image:
+				id: im_menu1_6
+				source:"image/factoria.png"
+				pos_hint: {"x":1.1-4, "top":2.6}
+			
+		FloatLayout:
+			size_hint: 1, .8
+			Image:
+				id: im_menu2
+				source:"image/logo.png"
+				pos_hint: {"x":0, "top":1-3.7}
+				
+		FloatLayout:
+			size_hint: 1, .8
+			Image:
+				id: im_menu3
+				source:"image/art_of_combat.png"
+				pos_hint: {"x":0, "top":1-2.4}
+		FloatLayout:
+			size_hint: 1, .3
+			Label:
+				background_normal: ''
+				background_color: 1,1,1,1
+				text: "РЕКЛАМА"
+				size_hint: 1, .15
+				pos_hint: {"x":0, "y":0}
+
+<PlayScreen>:
+	on_enter:
+		self.animation_widget()
+		
+	on_leave : 
+		self.animation_widget_back()
+		
+	FloatLayout:  
+        orientation: 'vertical'
+        canvas:
+            Rectangle:
+                source:"image/background.png"
+                size: self.size
+	BoxLayout:
+		padding: 10
+		orientation: "vertical"
+		FloatLayout:
+			size_hint: 1, .3
+			BoxLayout:
+				id: bl_play3
+				spacing: 1
+				pos_hint: {"x": 0, "top": 3}
+				Button:
+					background_normal: "image/facts/fact_1.png"
+					background_down: "image/facts/fact_1.png"
+				BoxLayout:
+					size_hint: .2, 1
+					orientation: "vertical"	
+					Button:
+						background_normal: "image/button_option_play.png"
+						background_down: "image/on_button_option_play.png"
+						x: self.parent.x 	
+						y: self.parent.y
+						on_release:
+							root.manager.current='option_1'
+					Button:
+						background_normal:"image/main_button.png"	 
+						background_down:"image/on_main_button.png"	 
+						x: self.parent.x 	
+						y: self.parent.y
+						on_release:
+							root.manager.current='menu'
+		
+		FloatLayout:
+			size_hint:1,.5	
+			Label:
+				id: btn_play1
+				text: '''"Если б море было водкой, я бы стал подводной лодкой..." - кому принадлежат эти слова?'''
+				text_size: self.size
+				color: 1,1,1,1	
+				font_size: 20
+				halign: 'center'
+				valign: 'middle'
+				pos_hint: {"x":0, "top": 2.5}
+				
+			
+
+		FloatLayout:
+			BoxLayout:
+				id: bl_play1
+				pos_hint: {"x":-2, "y":0.15}
+				orientation: "vertical"
+				size_hint:.5, .8
+				Button:
+					id: btn1
+					background_normal: "image/button.png"
+					background_down: "image/on_button.png"
+					text: 'Президент'
+					color: 0,0,0,1	
+					text_size: self.size
+					halign: 'center'
+					valign: 'middle'
+				Button:
+					id: btn2
+					background_normal: "image/button.png"
+					background_down: "image/on_button.png"
+					text: 'Программист'
+					color: 0,0,0,1	
+					text_size: self.size
+					halign: 'center'
+					valign: 'middle'
+				Button:
+					id: btn3
+					background_normal: "image/button.png"
+					background_down: "image/on_button.png"
+					text: 'Башкир'
+					color: 0,0,0,1	
+					text_size: self.size
+					halign: 'center'
+					valign: 'middle'
+				Button:
+					id:btn4
+					background_normal: "image/button.png"
+					background_down: "image/on_button.png"
+					text: 'Татарин'
+					color: 0,0,0,1	
+					text_size: self.size
+					halign: 'center'
+					valign: 'middle'
+
+			BoxLayout:
+				id: bl_play2
+				pos_hint: {"x":2.5, "y":0.15}
+				orientation: "vertical"
+				size_hint:.5, .8
+				Button:
+					id:btn5
+					background_normal: "image/button.png"
+					background_down: "image/on_button.png"
+					text: 'Ахметов Р.Р.'
+					color: 0,0,0,1	
+					text_size: self.size
+					halign: 'center'
+					valign: 'middle'
+				Button:
+					id:btn6
+					background_normal: "image/button.png"
+					background_down: "image/on_button.png"
+					text: 'Вяльшин Э.С.'
+					color: 0,0,0,1	
+					text_size: self.size
+					halign: 'center'
+					valign: 'middle'
+				Button:
+					id:btn7
+					background_normal: "image/button.png"
+					background_down: "image/on_button.png"
+					text: 'Тенигин А.А.'
+					color: 0,0,0,1	
+					text_size: self.size
+					halign: 'center'
+					valign: 'middle'
+				Button:
+					id:btn8
+					background_normal: "image/button.png"
+					background_down: "image/on_button.png"
+					text: 'Ельцин Б.Н.'
+					color: 0,0,0,1	
+					text_size: self.size
+					halign: 'center'
+					valign: 'middle'
+			FloatLayout:
+				Label:
+					background_normal: ''
+					background_color: 1,1,1,1
+					text: "РЕКЛАМА"
+					size_hint: 1, .15
+					pos_hint: {"x":0, "y":0}
+					
+<OptionScreen>:
+	
+	FloatLayout:  
+        orientation: 'vertical'
+        canvas:
+            Rectangle:
+                source: 'image/background.png'
+                size: self.size
+	BoxLayout:
+		orientation: 'vertical'
+		spacing: 30
+		padding: 30	
+		Image:	
+		Button:
+			text: "Назад"
+			font_size: 36
+			color: 1,1,1,1
+			size_hint: 1, .15
+			background_normal: "image/button.png"
+			background_down: "image/on_button.png"
+			on_release:
+				root.manager.current = 'menu'
+
+
+<OptionScreen_1>:
+	
+	FloatLayout:  
+        orientation: 'vertical'
+        canvas:
+            Rectangle:
+                source: 'image/background.png'
+                size: self.size
+	BoxLayout:
+		orientation: 'vertical'
+		spacing: 30
+		padding: 30		
+		Image:
+		Button:
+			text: "Назад"
+			font_size: 36
+			size_hint: 1, .15
+			background_normal: "image/button.png"
+			background_down: "image/on_button.png"
+			on_release:
+				root.manager.current = 'play'
+
+<RoolsScreen>:
+	
+	FloatLayout:  
+		orientation: 'vertical'
+		canvas:
+			Rectangle:
+				source: 'image/background.png'
+				size: self.size
+
+
+	BoxLayout:
+		orientation: 'vertical'
+		spacing: 30
+		padding: 30		
+		Image:
+		Button:
+			text: "Назад"
+			font_size: 36
+			size_hint: 1, .15
+			background_normal: "image/button.png"
+			background_down: "image/on_button.png"
+			on_release:
+				root.manager.current = 'menu'
+
+
+<AboutScreen>:
+	
+	FloatLayout:  
+        orientation: 'vertical'
+        canvas:
+            Rectangle:
+                source: 'image/background.png'
+                size: self.size
+	BoxLayout:
+		orientation: 'vertical'
+		spacing: 30
+		padding: 30	
+		Image:	
+		Button:
+			text: "Назад"
+			font_size: 36
+			size_hint: 1, .15
+			background_normal: "image/button.png"
+			background_down: "image/on_button.png"
+			on_release:
+				root.manager.current = 'menu'
+
+
+
+
